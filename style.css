@@ -1,0 +1,373 @@
+/* general */
+html,
+body {
+  height: 100%;
+  background-color: #f6fbff !important;
+
+}
+
+* {
+  direction: rtl;
+  font-family: "Varela Round", sans-serif;
+  cursor: default;
+}
+
+#drop-down-menu {
+  visibility: hidden;
+}
+
+#call-now {
+  visibility: hidden;
+}
+
+/* general */
+
+/* top menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 4px 2px -2px gray;
+  padding: 1.5em;
+  font-weight: bold;
+  color: #99aaaa;
+  text-align: center;
+  fill: #99aaaa;
+}
+
+#green-text {
+  color: #2c9420;
+}
+
+#blue-text {
+  color: #1e90ff;
+
+}
+
+svg p {
+  display: inline-block !important;
+}
+
+.top-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.top-nav-elements {
+  padding-top: 10px;
+  font-size: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+
+}
+
+.top-nav-elements:hover {
+  background-color: #2c9420;
+  padding-left: 10px;
+  padding-right: 10px;
+  fill: white;
+  color: white;
+}
+
+#logo {
+  display: flex;
+  position: absolute;
+  left: 30px;
+  top: 3%;
+  width: 100px;
+  height: 100px;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: auto;
+}
+
+/* top menu */
+
+/* body */
+#about-us {
+  display: flex;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://cdn.pixabay.com/photo/2017/06/13/22/43/interior-2400372_960_720.jpg);
+  background-position: center 70%;
+  background-size: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#two-cols {
+  display: flex;
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#col-one {
+  width: 50%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  line-height: 2;
+}
+
+#colored-social {
+  display: flex;
+  margin: 0 auto;
+  width: 25%;
+}
+
+#colored-facebook {
+  color: #1e90ff;
+}
+
+#colored-tiktok {
+  color: #2c9420;
+}
+
+#col-two {
+  width: 50%;
+  background-image: url("https://i.ytimg.com/vi_webp/iJGkSlChT7E/sddefault.webp");
+}
+
+.seperator {
+  width: 100%;
+  position: relative;
+}
+
+.seperator hr {
+  width: 90%;
+}
+
+.seperator-text {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: -3.5rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.seperator-text h3 {
+  padding: 1rem;
+  background-color: #f6fbff;
+  font-size: x-large;
+  font-weight: 100;
+}
+
+#call-text {
+  color: grey;
+}
+
+#our-service-text {
+  font-size: 30px;
+  margin-top: 1.5rem;
+}
+
+#phone-num-text {
+  color: grey;
+}
+
+#last-section {
+  width: 100%;
+  display: flex;
+
+}
+
+#carpet-image {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+}
+
+/* body */
+
+/* footer */
+
+footer {
+  display: flex;
+  position: absolute;
+  right: 0;
+  background: #267f1b;
+  width: 100%;
+}
+
+#footer-div {
+  color: white;
+  display: flex;
+  font-size: 15px;
+  width: 100%;
+}
+
+#right-col {
+  width: 75%;
+  margin-top: 2%;
+  padding-right: 3%;
+}
+
+#center-col {
+  width: 20%;
+  padding-right: 1%;
+  margin-left: 5em;
+
+}
+
+#left-col {
+  width: 5%;
+  padding-left: 4%;
+  padding-right: 2em;
+  display: inline-flex;
+}
+
+#left-col h4 {
+  position: absolute;
+}
+
+.contact-us {
+  margin-top: -100px;
+  display: inline-flex;
+}
+
+#contact-wrapper {
+  display: table-caption;
+}
+
+.footer-text {
+  padding-right: 10px;
+  font-size: medium;
+}
+
+#social {
+  display: inherit;
+  position: absolute;
+  top: 50%;
+}
+
+#facebook {
+  padding-left: 20px;
+}
+
+h6 {
+  color: white;
+}
+
+/* footer */
+
+
+
+/*media*/
+@media only screen and (max-width: 900px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  header {
+    margin-top: -3%;
+  }
+
+  .top-nav-elements {
+    visibility: hidden;
+  }
+
+  #call-now {
+    visibility: visible;
+    position: absolute;
+    text-align: center;
+    right: 20%;
+    left: 25%;
+    top: 3%;
+    color: #2c9420;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 8px;
+  }
+
+  #drop-down-menu {
+    visibility: visible;
+    position: absolute;
+    top: 6%;
+  }
+
+  .drop-down-button {
+    height: 2px;
+    width: 47px;
+    border: 1px solid #2c9420;
+    margin: 4px 0;
+    background-color: #2c9420;
+    border-radius: 3px;
+  }
+
+  #two-cols {
+    display: contents;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+  }
+
+  #col-one p {
+    width: 180%;
+    position: relative;
+    right: 10%;
+  }
+
+  #colored-social {
+    display: none;
+  }
+
+  #carpet-image {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  #call-text {
+    display: none;
+  }
+
+  #phone-num-text {
+    display: none;
+  }
+
+  #col-two {
+    width: 100%;
+    height: 400px;
+  }
+
+  #col-two iframe {
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+  }
+
+
+  #right-col {
+    display: none;
+  }
+
+  #footer-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #center-col {
+    width: 100%;
+  }
+
+  #left-col {
+    display: none;
+  }
+}
